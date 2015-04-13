@@ -170,8 +170,10 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
-    padding-bottom: 10px;
+    vertical-align: bottom;
+    
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 .intro .intro-body .brand-heading {
@@ -185,7 +187,7 @@ a:focus {
 @media(min-width:768px) {
     .intro {
         height: 100%;
-        padding: 0;
+        padding: 20px;
     }
 
     .intro .intro-body .brand-heading {
@@ -240,6 +242,22 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+.btn-primary {
+  color: #c7e5ff;
+  background-color: transparent;
+  border-color: #c7e5ff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #000;
+  background-color: #c7e5ff;
+  border-color: 0 0;
+}
+
 @-webkit-keyframes pulse {    
     0% {
         -webkit-transform: scale(1);
@@ -272,6 +290,42 @@ a:focus {
         -moz-transform: scale(1);
         transform: scale(1);
     }
+}
+
+.modal {
+  position: auto;
+  top: 35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: none;
+}
+
+.modal-header .close {
+  margin-top: -2px;
+    color: #c7e5ff;
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .content-section {
