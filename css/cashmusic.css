@@ -41,7 +41,7 @@ html,body{
 /* Zero Out */
 
 a{
-	background:#00cf7f;
+	background:#c7e5ff;
 	color:#222;
 	border-radius: 3px;
 	padding:20px;
@@ -98,7 +98,7 @@ placeholder{color:#eee;}
 /* Form Field Focus */
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus{
-	background:#00cf7f;
+	background:#c7e5ff;
 	color:#000;
 	outline: none;
 }
@@ -114,7 +114,7 @@ input[type=submit], .button{
 	width:100%;
 	text-align: center;
 	margin:4px auto 0 auto;
-	background:#00cf7f;
+	background:#c7e5ff;
 	color:#222;
 	display:inline-block;
 	border:none;
