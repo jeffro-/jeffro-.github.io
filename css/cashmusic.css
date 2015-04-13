@@ -1,0 +1,329 @@
+/*************************************************** 
+ *
+ *  CASH Music - Embedded Elements Styles
+ *	Created by CASH Music
+ *
+ ***************************************************/
+
+/* General */
+html,body{
+	box-sizing: border-box;
+	overflow:hidden;
+	font: 400 18px/20px 'Montserrat',Helvetica,Arial,sans-serif;
+	margin:0;
+	padding:0;
+	width:100%;
+	color:#222;
+	-webkit-transition: opacity 0.3s  ease-in-out;
+	-moz-transition: opacity 0.3s  ease-in-out;
+	trasition: opacity 0.3s ease-in-out;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.cashmusic .cashmusic.embed, iframe{
+	padding:0;
+	margin:0;
+}
+
+#mainspc{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Zero Out */
+
+a{
+	background:#00cf7f;
+	color:#222;
+	border-radius: 3px;
+	padding:20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	line-height: 35px;
+}
+
+label{
+	position:absolute;
+	text-indent: -5000em;
+}
+
+br{
+	display:none;
+}
+
+/* Input Fields */
+
+input{
+	width:100%;
+	padding:20px 5%;
+	margin:0;
+	border:none;
+	font-weight: 100;
+	display:inline-block;
+	background:#222;
+	background:rgba(34,34,34,0.9);
+	color:#f5f5f5;
+	font: 400 18px/20px 'Montserrat',Helvetica,Arial,sans-serif;
+	-webkit-transition: background 0.3s  ease-in-out;
+	-moz-transition: background 0.3s  ease-in-out;
+	trasition: background 0.3s ease-in-out;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	outline:none;
+}
+
+/* Placeholder Text */
+
+::-webkit-input-placeholder{color:#eee;}
+placeholder{color:#eee;}
+
+/* Form Field Focus */
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus{
+	background:#00cf7f;
+	color:#000;
+	outline: none;
+}
+
+input:focus::-webkit-input-placeholder{color:#111;}
+input:focus placeholder{color:#111;}
+
+
+/* Button */
+
+input[type=submit], .button{
+	padding:21px 0;
+	width:100%;
+	text-align: center;
+	margin:4px auto 0 auto;
+	background:#00cf7f;
+	color:#222;
+	display:inline-block;
+	border:none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: capitalize;
+	-webkit-appearance:none;
+}
+
+input[type=submit]:hover, .button:hover{
+	background:#000;
+	color:#fff;
+	cursor: pointer;
+	outline: none;
+}
+
+/* Errors */
+
+.cash_error{
+	text-align: center;
+	padding:20px 5% 20px 5%;
+	margin:0 0 4px 0;
+	width:100%;
+	height:100%;
+	background:#ff3232;
+	color:#f5f5f5;
+	font-size: 12px;
+	font-weight: 400;
+	-webkit-animation: ooops 1.5s; /* Chrome, Safari, Opera */
+    animation: ooops 1.5s;
+    -webkit-animation-iteration-count: 1; /* Safari and Chrome */
+    animation-iteration-count: 1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Notation */
+
+.cash_notation{
+	font-size: 12px;
+	padding:10px 0;
+}
+
+/* Single Purchase */
+
+.singlepurchase .cash_singlepurchase_itemname, .singlepurchase .cash_singlepurchase_itemprice, .singlepurchase .cash_singlepurchase_itemdescription{
+	/*display:block;*/
+	display:inline-block;
+	padding:0;
+	/*background:rgba(34,34,34,0.9);*/
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius: 3px;
+	margin:0 0 2px 0;
+}
+
+.singlepurchase .cash_singlepurchase_itemname{
+	margin:0 0 10px 0;
+}
+
+.singlepurchase .cash_singlepurchase_itemprice{
+	color:#333;
+	margin:0 0 10px 0;
+}
+
+.singlepurchase .cash_singlepurchase_itemdescription{
+ 	font-size: 12px;
+ 	display:block;
+ 	margin: 0 0 10px 0;
+}
+
+.cash_singlepurchase_flexible_price {
+	position:relative;
+}
+
+.cash_singlepurchase_flexible_price .total_price{
+ 	width:100%;
+ 	padding-left:3.5em;
+}
+
+.cash_singlepurchase_flexible_price .cash_singlepurchase_currency{
+	position:absolute;
+	background:transparent;
+	color:#f5f5f5;
+	opacity:0.6;
+	padding:20px 0 0 1.5em;
+	margin:0;
+}
+
+
+/* Static Content */
+
+.staticcontent{
+	text-align: justify;
+	font-size:14px;
+}
+
+/* Download Codes */
+
+.downloadcodes .download, .downloadcodes .description{
+	display: inline-block;
+}
+
+.downloadcodes .description{
+	margin:0 10px 0 10px;
+}
+
+/* Tour Dates */
+
+.tourdates .cash_event{
+	width:100%;
+	display:block;
+	padding:10px 2%;
+	display:block;
+	overflow:auto;
+	margin:0 0 2px 0;
+	color: #f5f5f5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.tourdates .cash_event:nth-child(odd){
+	background:#111;
+	background:rgba(25,25,25,0.9);
+}
+
+.tourdates .cash_event:nth-child(even){
+	background:#121212;
+	background:rgba(18,18,18,0.9);
+}
+
+.cash_timeandplace{
+	margin:0 2% 0 0;
+	display:inline-block;
+	width:88%;
+}
+
+.tourdates .cash_location{
+	padding:10px 0 10px 2%;
+}
+
+.tourdates .cash_venue{
+	padding:10px 2% 10px 0;
+}
+
+.tourdates .cash_date{
+	padding:10px 0;
+}
+
+.tourdates .cash_comments{
+	display:inline-block;
+	color:#555;
+	font-size: 16px;
+	padding:5px 0;
+	margin:0 2% 0 0;
+	width:86%;
+}
+
+.tourdates .cash_purchase_url{
+	display:inline-block;
+	padding:10px 5%;
+	text-align: center;
+	-webkit-transition: 0.3s  ease-in-out;
+	-moz-transition: 0.3s  ease-in-out;
+	trasition:0.3s ease-in-out;
+	margin:5px 0 0 0;
+	padding:10px 5%;
+	width:100%;
+	display:block;
+}
+
+.tourdates .cash_purchase_url:hover{
+	background:#000;
+	color:#fff;
+	cursor: pointer;
+	outline: none;
+}
+
+/* -- Mid Size + Above / Vertical Tablet -- */
+@media screen and (min-width: 535px) {
+	
+	input{
+		padding:20px 3%;
+		width:69%;
+		margin:0;
+	}
+
+	input[type=submit], .button{
+		width:30%;
+		margin:0;
+	}
+
+	.cash_error{
+		width:99.5%;
+	}
+
+	/* Tour Dates */
+	.tourdates .cash_purchase_url{
+		width:auto;
+		padding:10px 2%;
+		display: inline-block;
+	}
+
+	/* Single Purchase */
+	.cash_singlepurchase_flexible_price .total_price{
+	 	width:69%;
+	}
+
+}

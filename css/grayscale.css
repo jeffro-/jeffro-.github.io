@@ -170,7 +170,7 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
     padding-bottom: 10px;
 }
 
