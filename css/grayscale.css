@@ -188,6 +188,7 @@ a:focus {
     .intro {
         height: 100%;
         padding: 20px;
+        padding-bottom: 0px;
     }
 
     .intro .intro-body .brand-heading {
@@ -294,7 +295,7 @@ a:focus {
 
 .modal {
   position: auto;
-  top: 35%;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -315,6 +316,7 @@ a:focus {
 .modal-header .close {
   margin-top: -2px;
     color: #c7e5ff;
+    z-index: 1050;
 }
 
 .modal-content {
