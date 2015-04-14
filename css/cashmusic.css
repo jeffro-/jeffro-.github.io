@@ -84,9 +84,9 @@ input{
 	-webkit-transition: background 0.3s  ease-in-out;
 	-moz-transition: background 0.3s  ease-in-out;
 	trasition: background 0.3s ease-in-out;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	outline:none;
 }
 
@@ -118,9 +118,9 @@ input[type=submit], .button{
 	color:#222;
 	display:inline-block;
 	border:none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	text-transform: capitalize;
 	-webkit-appearance:none;
 }
