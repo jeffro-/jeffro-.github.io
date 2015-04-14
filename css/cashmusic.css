@@ -111,7 +111,7 @@ input:focus placeholder{color:#111;}
 
 input[type=submit], .button{
 	padding:21px 0;
-	width:80%;
+	width:100%;
 	text-align: center;
 	margin:4px auto 0 auto;
 	background:#c7e5ff;
