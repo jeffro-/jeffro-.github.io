@@ -294,11 +294,14 @@ a:focus {
 }
 
 .modal {
+    display: flex !important;
+    height: 100%;
   position: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+    margin: auto;
   
   z-index: 1050;
   display: none;
@@ -334,9 +337,7 @@ a:focus {
 .modal-body {
   position: relative;
   padding: 15px;
-}
-
-.widget {
+  max-height: 500px;
 }
 
 .content-section {
