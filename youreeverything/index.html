@@ -1,1 +1,130 @@
-youreeverything.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="jeffro is a california based electronic musician and artist.">
+    <meta name="author" content="jeffro">
+    <meta name="keywords" content="jeffro, music, beats, electronic music, future bass, future beats, soulection, rustie, cashmere cat, mr carmack, hip hop, future">
+
+    <title>you're everything</title>
+    
+<!--    <script src="https://fb.me/react-0.13.3.min.js"></script>-->
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--    <script type="text/jsx" src="app.js"></script>-->
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="node_modules/vhs/css/vhs.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+    
+    
+    <style>
+        body{
+            background: 
+                linear-gradient(
+                  rgba(10, 10, 10, 0.7), 
+                  rgba(10, 10, 10, 0.7)
+                ),
+                
+                url(img/bg.jpg);
+            
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            filter: grayscale(100%); 
+        }
+        @media (min-width: 600px) {
+          .container {
+            width: 600px;
+          }
+        }
+        .container div{
+            margin-top: 25px;
+            height: 100%;
+        }
+        #cover{
+            width: 100%;
+            position: relative;
+        }
+        #player{
+            background: rgba(0, 0, 0, 0.53);
+            position: relative;
+            width: 100%;
+            height: 4em;
+            top: -85px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            display: block;
+        }
+        .download{
+            position: relative;
+            top: -85px;
+            width: 100%;
+            height: 4em;
+            background-color: #a5c7fd;
+            color: #67829a;
+            border: none;
+            border-radius: 0;
+        }
+        #cashy{
+            visibility: visible;
+            position: relative;
+            width: 100%;
+            height: 100px;
+            top: -110px;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <div class="container">
+<!--
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-m-2 col-m-offset-2 vhs-duration-4 vhs-fade vhs-ease-out">
+                <h3>jeffro</h3><p>you're everything</p>
+            </div>
+        </div>       
+        
+-->
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-m-2 col-m-offset-2 vhs-duration-4 vhs-fade vhs-ease-out">
+                <img id="cover" src="img/cover.jpg"></img>
+            
+            <div id="player" class="vhs-fade vhs-delay-5 vhs-duration-5">
+                <iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224047589&amp;color=a5d4fd&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </div>
+            <button class="btn btn-primary btn-block download vhs-top vhs-delay-5 vhs-duration-6" type="submit" onclick="">free download <i class="fa fa-sign-in"></i> </button>
+            <div id="cashy">
+                
+                 <script type="text/javascript" src="https://cashmusic.org/public/cashmusic.js"></script><script type="text/javascript"> window.cashmusic.embed('https://cashmusic.org/public','6472');</script>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="app"></div>
+    
+    <script>
+        $(function(){
+            $("#cashy").hide();
+            $(".download").click(function(){
+                
+                $("#cashy").show("600");
+                $(this).hide();
+            });
+        });
+    
+    </script>
+</body>
