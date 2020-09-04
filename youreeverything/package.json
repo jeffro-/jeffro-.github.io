@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "react": "^0.13.3",
+    "react": "^16.13.1",
     "react-soundplayer": "^0.2.0",
     "vhs": "^0.2.0"
   },
